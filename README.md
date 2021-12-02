@@ -3,4 +3,4 @@
 First steps in repo
 
 ---
-<p align='center' >Created by **Delta Team**</p>
+<p align='center' >Created by <b>Delta Team</b></p>
