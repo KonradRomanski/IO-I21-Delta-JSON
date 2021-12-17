@@ -23,17 +23,6 @@ public class JSONToolsController {
 
     private static final Logger logger = LoggerFactory.getLogger(JSONToolsController.class);
 
-    @RequestMapping(path = "/normal", method = RequestMethod.GET, produces = "application/json")
-    public String get(@PathVariable String text, @RequestParam(value="transforms", defaultValue="upper,escape") String[] transforms) {
-
-        // log the parameters
-        logger.debug(text);
-        logger.debug(Arrays.toString(transforms));
-
-        // perform the transformation, you should run your logic here, below is just a silly example
-        JSONTools transformer = new JSONTools(transforms);
-        return transformer.transform(text);
-    }
 
     @GetMapping(path = {"/json", "/json/{path}"})
     public JsonNode path(@PathVariable(required=false,name="path") String path,
@@ -70,19 +59,6 @@ public class JSONToolsController {
         return null;
 //        return "Received path: " + /*qparams.values().toArray()[0] +*/ qparams.get("path");
     }
-
-    @RequestMapping(method = RequestMethod.POST, produces = "application/json")
-    public String post(@PathVariable String text, @RequestBody String[] transforms) {
-
-        // log the parameters
-        logger.debug(text);
-        logger.debug(Arrays.toString(transforms));
-
-        // perform the transformation, you should run your logic here, below is just a silly example
-        JSONTools transformer = new JSONTools(transforms);
-        return transformer.transform(text);
-    }
-
 
 
 }
