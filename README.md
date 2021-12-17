@@ -45,6 +45,10 @@ Desciption line one
 Desciption line two
 ```
 
+### Usefull info
+When work on the particular  issue is done `[closed]` tag should be added, i.g.:  
+`CU-1xwcn70[closed]-end_of_work`  
+It enables auto issue completion
 
 ---
 <p align='center' >Created by <b>Delta Team</b></p>
