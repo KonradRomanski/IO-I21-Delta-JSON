@@ -1,41 +1,29 @@
 package pl.put.poznan.JSONTools.logic;
 
-import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
-/**
- * This is just an example to show that the logic should be outside the REST service.
- */
-public class JSONTools {
 
-    private JsonNode jsonObject;
+public class MinifyJSONTool extends JSONTool {
+
     private String jsonMinified;
     private String jsonPretty;
 
-
-    public JSONTools(String file) {
-        try {
-            jsonObject = new ObjectMapper().readTree(file);
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
+    public MinifyJSONTool(String file) {
+        super(file);
     }
 
     private void minify() throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.CLOSE_CLOSEABLE);
-        jsonMinified = mapper.writeValueAsString(jsonObject);
-
+        jsonMinified = mapper.writeValueAsString(super.getJsonObject());
     }
 
     private void prettify() throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
-        jsonPretty = mapper.writeValueAsString(jsonObject);
+        jsonPretty = mapper.writeValueAsString(super.getJsonObject());
     }
 
     public String getMinified() {
@@ -59,6 +47,4 @@ public class JSONTools {
         }
         return jsonPretty;
     }
-
-
 }
