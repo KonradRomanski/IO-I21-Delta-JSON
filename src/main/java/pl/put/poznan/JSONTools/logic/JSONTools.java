@@ -12,11 +12,53 @@ import com.fasterxml.jackson.databind.SerializationFeature;
  */
 public class JSONTools {
 
-    private ObjectMapper mapper;
     private JsonNode jsonObject;
+    private String jsonMinified;
+    private String jsonPretty;
 
-    public JSONTools(String file) throws JsonProcessingException {
-        mapper = new ObjectMapper();
-        jsonObject = mapper.readTree(file);
+
+    public JSONTools(String file) {
+        try {
+            jsonObject = new ObjectMapper().readTree(file);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
     }
+
+    private void minify() throws JsonProcessingException {
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.enable(SerializationFeature.CLOSE_CLOSEABLE);
+        jsonMinified = mapper.writeValueAsString(jsonObject);
+
+    }
+
+    private void prettify() throws JsonProcessingException {
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.enable(SerializationFeature.INDENT_OUTPUT);
+        jsonPretty = mapper.writeValueAsString(jsonObject);
+    }
+
+    public String getMinified() {
+        if (jsonMinified == null){
+            try {
+                this.minify();
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            }
+        }
+        return jsonMinified;
+    }
+
+    public String getPretty() {
+        if (jsonPretty == null){
+            try {
+                this.prettify();
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            }
+        }
+        return jsonPretty;
+    }
+
+
 }
