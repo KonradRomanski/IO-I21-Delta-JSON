@@ -1,4 +1,5 @@
 package pl.put.poznan.JSONTools.rest;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -59,7 +60,23 @@ public class JSONToolsController {
 //        return "Received path: " + /*qparams.values().toArray()[0] +*/ qparams.get("path");
     }
 
+    @RequestMapping(value = "/send", method = RequestMethod.POST)
+    public JsonNode Test(@RequestBody String inputPayload) {
 
+
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            JsonNode actualObj = null;
+            actualObj = mapper.readTree(inputPayload);
+            mapper.enable(SerializationFeature.INDENT_OUTPUT);
+            String unminified = mapper.writeValueAsString(actualObj);
+            return mapper.readTree(unminified);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
 }
 
 
