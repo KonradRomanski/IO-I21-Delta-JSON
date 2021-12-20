@@ -1,7 +1,7 @@
 # IO-I21-Delta-JSON
 
 ## Welcome to our best REST API app.  
-If you'd like to know how to get started wokring in our repo please, follow these [rules](https://github.com/TheSoulsHunter/IO-I21-Delta-JSON#how_to.md).
+If you'd like to know how to get started wokring in our repo please, follow these [rules](https://github.com/TheSoulsHunter/IO-I21-Delta-JSON/blob/develop/how_to.md).
 
 <br/>
 
