@@ -60,7 +60,7 @@ public class JSONToolsController {
             String file = Files.readString(Path.of("src/main/resources/json/" + outputFile + ".json"));
             ObjectMapper objMapper = new ObjectMapper();
             JsonNode obj = objMapper.readTree(file);
-            String strObj = objMapper.writeValueAsString(obj.get("jsonObject").get(value.get("node")));
+            String strObj = objMapper.writeValueAsString(obj.get("jsonObject")/*.get(value.get("node"))*/);
             return strObj;
         } catch (IOException e) {
             e.printStackTrace();
