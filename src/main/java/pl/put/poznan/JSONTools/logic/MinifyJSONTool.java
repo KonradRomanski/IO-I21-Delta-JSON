@@ -1,6 +1,8 @@
 package pl.put.poznan.JSONTools.logic;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
@@ -12,6 +14,9 @@ public class MinifyJSONTool extends JSONTool {
 
     public MinifyJSONTool(String file) {
         super(file);
+    }
+    public MinifyJSONTool(JSONTool file) {
+        super(file.getJsonObject());
     }
 
     private void minify() throws JsonProcessingException {

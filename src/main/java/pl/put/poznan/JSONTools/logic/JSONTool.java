@@ -13,7 +13,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
  */
 public class JSONTool {
 
-    private JsonNode jsonObject;
+    protected JsonNode jsonObject;
 
     /**
      *
@@ -25,6 +25,10 @@ public class JSONTool {
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
+    }
+
+    public JSONTool(JsonNode file) {
+            jsonObject = file;
     }
 
     /**
