@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 /**
  * Decorator for JSONTool component
- *
+ * Tool that can minify and prettify (unminified) json object
  */
 public class MinifyJSONTool extends JSONTool {
 
