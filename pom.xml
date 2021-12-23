@@ -2,9 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    
-    
+    <modelVersion>4.0.0</modelVersion>   
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -13,7 +11,7 @@
 
     <groupId>pl.put.poznan</groupId>
     <artifactId>io-project-architecture</artifactId>
-    <version>0.1</version>
+    <version>1.0</version>
 
 	<properties>
         <java.version>11</java.version>
@@ -52,7 +50,6 @@
 
     </dependencies>
     
-
     <build>
         <plugins>
             <plugin>
@@ -63,6 +60,18 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.3.1</version>
+            </plugin>
+            <plugin>
+            <groupId>io.github.invvk</groupId>
+            <artifactId>auto-increment-plugin</artifactId>
+            <version>1.1.2</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>modifyVersion</goal>
+                    </goals>
+                </execution>
+            </executions>
             </plugin>
         </plugins>
     </build>
