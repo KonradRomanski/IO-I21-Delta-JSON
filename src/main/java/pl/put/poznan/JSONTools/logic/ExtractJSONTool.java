@@ -91,7 +91,7 @@ public class ExtractJSONTool extends JSONTool {
      * This will catch exception from processing method
      * @return string
      */
-    public String getGleaned() {
+    public String getCleaned() {
         if (jsonCleaned == null){
             try {
                 this.removeObjects();
