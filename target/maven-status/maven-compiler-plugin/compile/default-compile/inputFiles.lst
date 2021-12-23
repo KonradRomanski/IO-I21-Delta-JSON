@@ -1,3 +1,5 @@
-/Users/mochodek/Documents/Dydaktyka/Wyklady/IO/Laboratory classes/projekt/ioprojectarchitecture/src/main/java/pl/put/poznan/transformer/app/TextTransformerApplication.java
-/Users/mochodek/Documents/Dydaktyka/Wyklady/IO/Laboratory classes/projekt/ioprojectarchitecture/src/main/java/pl/put/poznan/transformer/logic/TextTransformer.java
-/Users/mochodek/Documents/Dydaktyka/Wyklady/IO/Laboratory classes/projekt/ioprojectarchitecture/src/main/java/pl/put/poznan/transformer/rest/TextTransformerController.java
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\src\main\java\pl\put\poznan\JSONTools\logic\MinifyJSONTool.java
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\src\main\java\pl\put\poznan\JSONTools\logic\ExtractJSONTool.java
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\src\main\java\pl\put\poznan\JSONTools\app\JSONToolsApplication.java
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\src\main\java\pl\put\poznan\JSONTools\logic\JSONTool.java
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\src\main\java\pl\put\poznan\JSONTools\rest\JSONToolsController.java

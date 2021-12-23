@@ -1,0 +1,90 @@
+@options
+@packages
+@argfile
+-classpath
+'C:/Users/janbr/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.3.3.RELEASE/spring-boot-starter-web-2.3.3.RELEASE.jar;C:/Users/janbr/.m2/repository/org/springframework/boot/spring-boot-starter/2.3.3.RELEASE/spring-boot-starter-2.3.3.RELEASE.jar;C:/Users/janbr/.m2/repository/org/springframework/boot/spring-boot/2.3.3.RELEASE/spring-boot-2.3.3.RELEASE.jar;C:/Users/janbr/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.3.3.RELEASE/spring-boot-autoconfigure-2.3.3.RELEASE.jar;C:/Users/janbr/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.3.3.RELEASE/spring-boot-starter-logging-2.3.3.RELEASE.jar;C:/Users/janbr/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar;C:/Users/janbr/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar;C:/Users/janbr/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar;C:/Users/janbr/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar;C:/Users/janbr/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar;C:/Users/janbr/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar;C:/Users/janbr/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.3.3.RELEASE/spring-boot-starter-json-2.3.3.RELEASE.jar;C:/Users/janbr/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.2/jackson-databind-2.11.2.jar;C:/Users/janbr/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.2/jackson-annotations-2.11.2.jar;C:/Users/janbr/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.2/jackson-datatype-jdk8-2.11.2.jar;C:/Users/janbr/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.2/jackson-datatype-jsr310-2.11.2.jar;C:/Users/janbr/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.2/jackson-module-parameter-names-2.11.2.jar;C:/Users/janbr/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.3.3.RELEASE/spring-boot-starter-tomcat-2.3.3.RELEASE.jar;C:/Users/janbr/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.37/tomcat-embed-core-9.0.37.jar;C:/Users/janbr/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar;C:/Users/janbr/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.37/tomcat-embed-websocket-9.0.37.jar;C:/Users/janbr/.m2/repository/org/springframework/spring-web/5.2.8.RELEASE/spring-web-5.2.8.RELEASE.jar;C:/Users/janbr/.m2/repository/org/springframework/spring-beans/5.2.8.RELEASE/spring-beans-5.2.8.RELEASE.jar;C:/Users/janbr/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar;C:/Users/janbr/.m2/repository/org/springframework/spring-aop/5.2.8.RELEASE/spring-aop-5.2.8.RELEASE.jar;C:/Users/janbr/.m2/repository/org/springframework/spring-context/5.2.8.RELEASE/spring-context-5.2.8.RELEASE.jar;C:/Users/janbr/.m2/repository/org/springframework/spring-expression/5.2.8.RELEASE/spring-expression-5.2.8.RELEASE.jar;C:/Users/janbr/.m2/repository/org/springframework/spring-core/5.2.8.RELEASE/spring-core-5.2.8.RELEASE.jar;C:/Users/janbr/.m2/repository/org/springframework/spring-jcl/5.2.8.RELEASE/spring-jcl-5.2.8.RELEASE.jar;C:/Users/janbr/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar;C:/Users/janbr/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.9.0/jackson-dataformat-yaml-2.9.0.jar;C:/Users/janbr/.m2/repository/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar;C:/Users/janbr/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.2/jackson-core-2.11.2.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'11'
+-sourcepath
+'C:/Users/janbr/OneDrive/Dokumenty/Studia/sem5/IO/IO-I21-Delta-JSON/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2021. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/janbr/OneDrive/Dokumenty/Studia/sem5/IO/IO-I21-Delta-JSON/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'io-project-architecture 0.1 API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' 'C:/Users/janbr/OneDrive/Dokumenty/Studia/sem5/IO/IO-I21-Delta-JSON/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'io-project-architecture 0.1 API'
+pl.put.poznan.JSONTools.app
+pl.put.poznan.JSONTools.logic
+pl.put.poznan.JSONTools.rest
+'C:/Users/janbr/OneDrive/Dokumenty/Studia/sem5/IO/IO-I21-Delta-JSON/src/main/java/pl/put/poznan/JSONTools/app/JSONToolsApplication.java'
+'C:/Users/janbr/OneDrive/Dokumenty/Studia/sem5/IO/IO-I21-Delta-JSON/src/main/java/pl/put/poznan/JSONTools/logic/ExtractJSONTool.java'
+'C:/Users/janbr/OneDrive/Dokumenty/Studia/sem5/IO/IO-I21-Delta-JSON/src/main/java/pl/put/poznan/JSONTools/logic/JSONTool.java'
+'C:/Users/janbr/OneDrive/Dokumenty/Studia/sem5/IO/IO-I21-Delta-JSON/src/main/java/pl/put/poznan/JSONTools/logic/MinifyJSONTool.java'
+'C:/Users/janbr/OneDrive/Dokumenty/Studia/sem5/IO/IO-I21-Delta-JSON/src/main/java/pl/put/poznan/JSONTools/rest/JSONToolsController.java'
+C:\Users\janbr\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.3.3.RELEASE\spring-boot-starter-web-2.3.3.RELEASE.jar = 1639696794621
+C:\Users\janbr\.m2\repository\org\springframework\boot\spring-boot-starter\2.3.3.RELEASE\spring-boot-starter-2.3.3.RELEASE.jar = 1639696804829
+C:\Users\janbr\.m2\repository\org\springframework\boot\spring-boot\2.3.3.RELEASE\spring-boot-2.3.3.RELEASE.jar = 1639696807104
+C:\Users\janbr\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.3.3.RELEASE\spring-boot-autoconfigure-2.3.3.RELEASE.jar = 1639696808364
+C:\Users\janbr\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.3.3.RELEASE\spring-boot-starter-logging-2.3.3.RELEASE.jar = 1639696797458
+C:\Users\janbr\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar = 1639696811477
+C:\Users\janbr\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar = 1639696811436
+C:\Users\janbr\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar = 1639696811387
+C:\Users\janbr\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar = 1639696811566
+C:\Users\janbr\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar = 1639696811453
+C:\Users\janbr\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar = 1639696812148
+C:\Users\janbr\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.3.3.RELEASE\spring-boot-starter-json-2.3.3.RELEASE.jar = 1639696797952
+C:\Users\janbr\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.2\jackson-databind-2.11.2.jar = 1639696812071
+C:\Users\janbr\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.2\jackson-annotations-2.11.2.jar = 1639696811822
+C:\Users\janbr\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.2\jackson-datatype-jdk8-2.11.2.jar = 1639696811642
+C:\Users\janbr\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.2\jackson-datatype-jsr310-2.11.2.jar = 1639696811754
+C:\Users\janbr\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.2\jackson-module-parameter-names-2.11.2.jar = 1639696812003
+C:\Users\janbr\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.3.3.RELEASE\spring-boot-starter-tomcat-2.3.3.RELEASE.jar = 1639696798710
+C:\Users\janbr\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.37\tomcat-embed-core-9.0.37.jar = 1639696813514
+C:\Users\janbr\.m2\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar = 1639696812257
+C:\Users\janbr\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.37\tomcat-embed-websocket-9.0.37.jar = 1639696812297
+C:\Users\janbr\.m2\repository\org\springframework\spring-web\5.2.8.RELEASE\spring-web-5.2.8.RELEASE.jar = 1639696807379
+C:\Users\janbr\.m2\repository\org\springframework\spring-beans\5.2.8.RELEASE\spring-beans-5.2.8.RELEASE.jar = 1639696804157
+C:\Users\janbr\.m2\repository\org\springframework\spring-webmvc\5.2.8.RELEASE\spring-webmvc-5.2.8.RELEASE.jar = 1639696802965
+C:\Users\janbr\.m2\repository\org\springframework\spring-aop\5.2.8.RELEASE\spring-aop-5.2.8.RELEASE.jar = 1639696803312
+C:\Users\janbr\.m2\repository\org\springframework\spring-context\5.2.8.RELEASE\spring-context-5.2.8.RELEASE.jar = 1639696804382
+C:\Users\janbr\.m2\repository\org\springframework\spring-expression\5.2.8.RELEASE\spring-expression-5.2.8.RELEASE.jar = 1639696804882
+C:\Users\janbr\.m2\repository\org\springframework\spring-core\5.2.8.RELEASE\spring-core-5.2.8.RELEASE.jar = 1639696810829
+C:\Users\janbr\.m2\repository\org\springframework\spring-jcl\5.2.8.RELEASE\spring-jcl-5.2.8.RELEASE.jar = 1639696808051
+C:\Users\janbr\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar = 1639696813956
+C:\Users\janbr\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.9.0\jackson-dataformat-yaml-2.9.0.jar = 1640022818313
+C:\Users\janbr\.m2\repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar = 1639696811664
+C:\Users\janbr\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.2\jackson-core-2.11.2.jar = 1639696812121
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\src\main\java = 1639696657667
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\allclasses-index.html = 1640040627977
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\allpackages-index.html = 1640040627979
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\constant-values.html = 1640040627861
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\deprecated-list.html = 1640040627925
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\element-list = 1640040627796
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\help-doc.html = 1640040627991
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\index-all.html = 1640040627969
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\index.html = 1640040627930
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\jquery-ui.overrides.css = 1640040628020
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\member-search-index.js = 1640040627965
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\module-search-index.js = 1640040627960
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\overview-summary.html = 1640040627982
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\overview-tree.html = 1640040627916
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\package-search-index.js = 1640040627962
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\script.js = 1640040627995
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\search.js = 1640040627997
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\stylesheet.css = 1640040627994
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\tag-search-index.js = 1640040627967
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\type-search-index.js = 1640040627963

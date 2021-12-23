@@ -13,11 +13,14 @@ import com.fasterxml.jackson.databind.SerializationFeature;
  */
 public class JSONTool {
 
-    private JsonNode jsonObject;
+    /**
+     * Store json as JsonNode - class from jackson library
+     */
+    protected JsonNode jsonObject;
 
     /**
-     *
-     * @param file
+     * Constructor
+     * @param file - raw json string
      */
     public JSONTool(String file) {
         try {
@@ -28,7 +31,15 @@ public class JSONTool {
     }
 
     /**
-     *
+     * Constructor
+     * @param file - ready JsonNode object
+     */
+    public JSONTool(JsonNode file) {
+            jsonObject = file;
+    }
+
+    /**
+     * Getter JsonObject
      * @return JsonNode
      */
     public JsonNode getJsonObject() {
