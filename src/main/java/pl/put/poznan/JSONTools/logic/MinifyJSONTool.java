@@ -34,9 +34,7 @@ public class MinifyJSONTool extends JSONTool {
      * Create object from parent class object
      * @param file - parent class object JSONTool
      */
-    public MinifyJSONTool(JSONTool file) {
-        super(file.getJsonObject());
-    }
+    public MinifyJSONTool(JSONTool file) {super(file.getJsonObject());}
 
     /**
      * Processing Json to minify string
