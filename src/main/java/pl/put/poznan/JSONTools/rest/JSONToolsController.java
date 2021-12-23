@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 import org.springframework.web.bind.annotation.*;
+import pl.put.poznan.JSONTools.logic.ExtractJSONTool;
 import pl.put.poznan.JSONTools.logic.JSONTool;
 import pl.put.poznan.JSONTools.logic.MinifyJSONTool;
 
@@ -17,6 +18,7 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Vector;
 
 
 @RestController
@@ -51,17 +53,34 @@ public class JSONToolsController {
         return "ERROR encountered";
     }
 
-    @GetMapping(path = {"/specify/{outputFile}"})
-    public String specify(@PathVariable(required=false,name="outputFile") String outputFile,
+    @GetMapping(path = {"/extract/{outputFile}"})
+    public String extract(@PathVariable(required=false,name="outputFile") String outputFile,
                           @RequestParam(required=false) Map<String,String> value ) {
 //        return value.get("node");
 
         try {
             String file = Files.readString(Path.of("src/main/resources/json/" + outputFile + ".json"));
-            ObjectMapper objMapper = new ObjectMapper();
-            JsonNode obj = objMapper.readTree(file);
-            String strObj = objMapper.writeValueAsString(obj.get("jsonObject")/*.get(value.get("node"))*/);
-            return strObj;
+//            ObjectMapper objMapper = new ObjectMapper();
+//            JsonNode obj = objMapper.readTree(file);
+//            String strObj = objMapper.writeValueAsString(obj.get("jsonObject"));
+
+            Vector vec = new Vector();
+
+
+
+            if(value.containsKey("extractObjects")) {
+                String[] list = value.get("extractObjects").split(",");
+                vec.addAll(Arrays.asList(list));
+                ExtractJSONTool extractJSONTool = new ExtractJSONTool(file, vec);
+                return extractJSONTool.getCleaned();
+            }
+            else if(value.containsKey("leaveObjects")) {
+                String[] list = value.get("leaveObjects").split(",");
+                vec.addAll(Arrays.asList(list));
+                ExtractJSONTool extractJSONTool = new ExtractJSONTool(file, vec);
+                return extractJSONTool.getPretty();
+            }
+            return outputFile + " " + vec;
         } catch (IOException e) {
             e.printStackTrace();
         }
