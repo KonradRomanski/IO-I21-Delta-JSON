@@ -10,7 +10,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
  * Decorator for JSONTool component
  *
  */
-public class MinifyJSONTool extends JSONTool {
+public class MinifyJSONTool{// extends JSONTool {
 
     /**
      * Store json as string object without white characters
@@ -22,19 +22,22 @@ public class MinifyJSONTool extends JSONTool {
      */
     private String jsonPretty;
 
+    private JSONTool jsonTool;
     /**
      * Create object from raw string
      * @param file - raw json string
      */
     public MinifyJSONTool(String file) {
-        super(file);
+        jsonTool = new JSONTool(file);
     }
 
     /**
      * Create object from parent class object
      * @param file - parent class object JSONTool
      */
-    public MinifyJSONTool(JSONTool file) {super(file.getJsonObject());}
+    public MinifyJSONTool(JSONTool file) {
+        jsonTool = file;
+    }
 
     /**
      * Processing Json to minify string
