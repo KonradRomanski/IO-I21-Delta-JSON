@@ -13,6 +13,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
  */
 public class JSONTool {
 
+
     /**
      * Store json as JsonNode - class from jackson library
      */

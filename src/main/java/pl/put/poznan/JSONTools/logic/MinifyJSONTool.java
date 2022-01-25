@@ -46,7 +46,7 @@ public class MinifyJSONTool{// extends JSONTool {
     private void minify() throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.CLOSE_CLOSEABLE);
-        jsonMinified = mapper.writeValueAsString(super.getJsonObject());
+        jsonMinified = mapper.writeValueAsString(jsonTool.getJsonObject());
     }
 
     /**
@@ -56,7 +56,7 @@ public class MinifyJSONTool{// extends JSONTool {
     private void prettify() throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
-        jsonPretty = mapper.writeValueAsString(super.getJsonObject());
+        jsonPretty = mapper.writeValueAsString(jsonTool.getJsonObject());
     }
 
     /**
