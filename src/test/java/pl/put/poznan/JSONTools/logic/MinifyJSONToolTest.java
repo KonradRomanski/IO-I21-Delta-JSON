@@ -16,23 +16,23 @@ public class MinifyJSONToolTest {
 
     @BeforeAll
     public static void setUp(){
-        prettifiedCorrect = new String("{\n" +
-                "  \"menu\" : {\n" +
-                "    \"id\" : \"file\",\n" +
-                "    \"value\" : \"File\",\n" +
-                "    \"popup\" : {\n" +
-                "      \"menuitem\" : [ {\n" +
-                "        \"value\" : \"New\",\n" +
-                "        \"onclick\" : \"CreateNewDoc()\"\n" +
-                "      }, {\n" +
-                "        \"value\" : \"Open\",\n" +
-                "        \"onclick\" : \"OpenDoc()\"\n" +
-                "      }, {\n" +
-                "        \"value\" : \"Close\",\n" +
-                "        \"onclick\" : \"CloseDoc()\"\n" +
-                "      } ]\n" +
-                "    }\n" +
-                "  }\n" +
+        prettifiedCorrect = new String("{\r\n" +
+                "  \"menu\" : {\r\n" +
+                "    \"id\" : \"file\",\r\n" +
+                "    \"value\" : \"File\",\r\n" +
+                "    \"popup\" : {\r\n" +
+                "      \"menuitem\" : [ {\r\n" +
+                "        \"value\" : \"New\",\r\n" +
+                "        \"onclick\" : \"CreateNewDoc()\"\r\n" +
+                "      }, {\r\n" +
+                "        \"value\" : \"Open\",\r\n" +
+                "        \"onclick\" : \"OpenDoc()\"\r\n" +
+                "      }, {\r\n" +
+                "        \"value\" : \"Close\",\r\n" +
+                "        \"onclick\" : \"CloseDoc()\"\r\n" +
+                "      } ]\r\n" +
+                "    }\r\n" +
+                "  }\r\n" +
                 "}");
         minifiedCorrect = new String("{\"menu\":{\"id\":\"file\",\"value\":\"File\",\"popup\":{\"menuitem\":[{\"value\":\"New\",\"onclick\":\"CreateNewDoc()\"},{\"value\":\"Open\",\"onclick\":\"OpenDoc()\"},{\"value\":\"Close\",\"onclick\":\"CloseDoc()\"}]}}}");
     }
@@ -41,16 +41,16 @@ public class MinifyJSONToolTest {
     public void testMinify(){
         MinifyJSONTool mMini = new MinifyJSONTool(minifiedCorrect);
         MinifyJSONTool pMini = new MinifyJSONTool(prettifiedCorrect);
-        assertSame(minifiedCorrect, mMini.getMinified(), "Correct json minifying from mini");
-        assertSame(minifiedCorrect, pMini.getMinified(), "Correct json minifying from pretty");
+        assertEquals(minifiedCorrect, mMini.getMinified(), "Correct json minifying from mini");
+        assertEquals(minifiedCorrect, pMini.getMinified(), "Correct json minifying from pretty");
     }
 
     @Test
     public void testPrettify(){
         MinifyJSONTool mMini = new MinifyJSONTool(minifiedCorrect);
         MinifyJSONTool pMini = new MinifyJSONTool(prettifiedCorrect);
-        assertSame(prettifiedCorrect, mMini.getPretty(), "Correct json prettifying from mini");
-        assertSame(prettifiedCorrect, pMini.getPretty(), "Correct json prettifying from pretty");
+        assertEquals(prettifiedCorrect, mMini.getPretty(), "Correct json prettifying from mini");
+        assertEquals(prettifiedCorrect, pMini.getPretty(), "Correct json prettifying from pretty");
     }
 
     @Test
