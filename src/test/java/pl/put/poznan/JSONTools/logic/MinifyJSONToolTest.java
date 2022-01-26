@@ -55,20 +55,9 @@ public class MinifyJSONToolTest {
 
     @Test
     public void testProcessingException(){
-        MinifyJSONTool mockClass = mock(MinifyJSONTool.class, withSettings().useConstructor("Czy ten JSON jest ok ; ? ;"));
-        Exception e = Mockito.spy(new Exception());
-        Mockito.doThrow(e).when(mockClass).getMinified();
-
-        Mockito.verify(e).printStackTrace();
+        MinifyJSONTool wrong = new MinifyJSONTool("Wrong json {} ; ; ;");
+        assertEquals(prettifiedCorrect, wrong.getPretty(), "Correct json prettifying from pretty");
     }
 
-//    @Test
-//    public void FullToShortcutDecoratorMockTest() {
-//        FullToShortcutDecorator decorator = mock(FullToShortcutDecorator.class, withSettings().useConstructor("Pieczywo to na przykład chleb i bułki"));
-//
-//        when(decorator.decore()).thenReturn("Pieczywo to np. chleb i bułki");
-//
-//        Assert.assertEquals(decorator.decore(), new FullToShortcutDecorator("Pieczywo to na przykład chleb i bułki").decore());
-//    }
 
 }

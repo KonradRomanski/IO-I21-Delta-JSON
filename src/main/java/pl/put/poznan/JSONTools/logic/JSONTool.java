@@ -27,7 +27,7 @@ public class JSONTool {
         try {
             jsonObject = new ObjectMapper().readTree(file);
         } catch (JsonProcessingException e) {
-            e.printStackTrace();
+            jsonObject = null;
         }
     }
 

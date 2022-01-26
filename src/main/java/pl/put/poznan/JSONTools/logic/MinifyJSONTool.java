@@ -22,7 +22,11 @@ public class MinifyJSONTool{// extends JSONTool {
      */
     private String jsonPretty;
 
+    /**
+     * Store JSONTool component
+     */
     private JSONTool jsonTool;
+
     /**
      * Create object from raw string
      * @param file - raw json string
