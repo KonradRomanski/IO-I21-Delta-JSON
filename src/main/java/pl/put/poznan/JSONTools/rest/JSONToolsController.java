@@ -74,7 +74,8 @@ public class JSONToolsController {
                           @RequestBody String inputFile) {
         String tempFileName = (fileParam.get("fileName") == "") ? "file" : fileParam.get("fileName");
 
-        JSONTool objJSON = new JSONTool(inputFile);
+        JSONTool objJSON = null;
+        objJSON = new JSONTool(inputFile);
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             objectMapper.writeValue(Paths.get("src/main/resources/json/" + tempFileName + ".json").toFile(), objJSON);
