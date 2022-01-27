@@ -13,6 +13,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
  */
 public class JSONTool {
 
+
     /**
      * Store json as JsonNode - class from jackson library
      */
@@ -26,7 +27,7 @@ public class JSONTool {
         try {
             jsonObject = new ObjectMapper().readTree(file);
         } catch (JsonProcessingException e) {
-            e.printStackTrace();
+            jsonObject = null;
         }
     }
 
