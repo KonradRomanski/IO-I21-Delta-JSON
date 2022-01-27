@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: pl.put.poznan.JSONTools.logic.MinifyJSONToolTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.344 s <<< FAILURE! - in pl.put.poznan.JSONTools.logic.MinifyJSONToolTest
+testProcessingException  Time elapsed: 0.022 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <Cannot invoke "pl.put.poznan.JSONTools.logic.MinifyJSONTool.minify()" because "this.testThrow" is null>
+	at pl.put.poznan.JSONTools.logic.MinifyJSONToolTest.testProcessingException(MinifyJSONToolTest.java:77)
+
