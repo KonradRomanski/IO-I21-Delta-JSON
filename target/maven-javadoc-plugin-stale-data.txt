@@ -12,7 +12,7 @@
 'C:/Users/janbr/OneDrive/Dokumenty/Studia/sem5/IO/IO-I21-Delta-JSON/src/main/java'
 -author
 -bottom
-'Copyright &#169; 2021. All rights reserved.'
+'Copyright &#169; 2022. All rights reserved.'
 -charset
 'UTF-8'
 -d
@@ -69,22 +69,22 @@ C:\Users\janbr\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataforma
 C:\Users\janbr\.m2\repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar = 1639696811664
 C:\Users\janbr\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.2\jackson-core-2.11.2.jar = 1639696812121
 C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\src\main\java = 1639696657667
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\allclasses-index.html = 1640276534518
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\allpackages-index.html = 1640276534520
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\constant-values.html = 1640276534383
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\deprecated-list.html = 1640276534445
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\element-list = 1640276534325
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\help-doc.html = 1640276534528
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\index-all.html = 1640276534508
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\index.html = 1640276534451
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\jquery-ui.overrides.css = 1640276534570
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\member-search-index.js = 1640276534499
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\module-search-index.js = 1640276534488
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\overview-summary.html = 1640276534523
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\overview-tree.html = 1640276534439
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\package-search-index.js = 1640276534489
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\script.js = 1640276534533
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\search.js = 1640276534538
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\stylesheet.css = 1640276534531
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\tag-search-index.js = 1640276534504
-C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\type-search-index.js = 1640276534491
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\allclasses-index.html = 1643283616346
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\allpackages-index.html = 1643283616349
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\constant-values.html = 1643283616185
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\deprecated-list.html = 1643283616264
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\element-list = 1643283616121
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\help-doc.html = 1643283616355
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\index-all.html = 1643283616339
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\index.html = 1643283616289
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\jquery-ui.overrides.css = 1643283616412
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\member-search-index.js = 1643283616336
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\module-search-index.js = 1643283616322
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\overview-summary.html = 1643283616351
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\overview-tree.html = 1643283616258
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\package-search-index.js = 1643283616324
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\script.js = 1643283616359
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\search.js = 1643283616361
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\stylesheet.css = 1643283616358
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\tag-search-index.js = 1643283616338
+C:\Users\janbr\OneDrive\Dokumenty\Studia\sem5\IO\IO-I21-Delta-JSON\target\site\apidocs\type-search-index.js = 1643283616335
