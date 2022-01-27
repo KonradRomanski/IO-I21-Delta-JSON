@@ -1,10 +1,7 @@
 package pl.put.poznan.JSONTools.logic;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.MappingIterator;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.*;
 
 /**
  * Decorator for JSONTool component
@@ -47,7 +44,9 @@ public class MinifyJSONTool{// extends JSONTool {
      * Processing Json to minify string
      * @throws JsonProcessingException - when wrong JsonNode
      */
-    private void minify() throws JsonProcessingException {
+    public void minify() throws JsonProcessingException {
+        if (jsonTool.toString() == "") throw new JsonProcessingException("Error"){};
+
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.CLOSE_CLOSEABLE);
         jsonMinified = mapper.writeValueAsString(jsonTool.getJsonObject());

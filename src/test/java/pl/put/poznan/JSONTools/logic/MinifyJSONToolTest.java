@@ -2,8 +2,14 @@ package pl.put.poznan.JSONTools.logic;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.mockito.InOrder;
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.stubbing.Answer;
+import org.mockito.junit.MockitoJUnitRunner;
+import static org.mockito.Mockito.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
@@ -37,6 +43,11 @@ public class MinifyJSONToolTest {
         minifiedCorrect = new String("{\"menu\":{\"id\":\"file\",\"value\":\"File\",\"popup\":{\"menuitem\":[{\"value\":\"New\",\"onclick\":\"CreateNewDoc()\"},{\"value\":\"Open\",\"onclick\":\"OpenDoc()\"},{\"value\":\"Close\",\"onclick\":\"CloseDoc()\"}]}}}");
     }
 
+    public MinifyJSONTool testThrow;
+
+    @BeforeEach
+    void set() { MinifyJSONTool testThrow = new MinifyJSONTool(""); }
+
     @Test
     public void testMinify(){
         MinifyJSONTool mMini = new MinifyJSONTool(minifiedCorrect);
@@ -54,10 +65,31 @@ public class MinifyJSONToolTest {
     }
 
     @Test
-    public void testProcessingException(){
+    public void testProcessing(){
         MinifyJSONTool wrong = new MinifyJSONTool("Wrong json {} ; ; ;");
-        assertEquals(prettifiedCorrect, wrong.getPretty(), "Correct json prettifying from pretty");
+        assertNotEquals(prettifiedCorrect, wrong.getPretty(), "Correct json prettifying from pretty");
     }
 
+    @Test
+    public void testProcessingException() {
+        Exception exception = assertThrows(NullPointerException.class, () ->
+                this.testThrow.minify());
+        assertEquals(null, exception.getMessage());
+    }
 
+    @Test
+    public void testPrettifyMock(){
+        MinifyJSONTool minifyJSONTool = mock(MinifyJSONTool.class);
+        when(minifyJSONTool.getPretty()).thenReturn(null);
+
+        assertEquals(null, minifyJSONTool.getMinified());
+    }
+
+    @Test
+    public void testMinifyMock(){
+        MinifyJSONTool minifyJSONTool = mock(MinifyJSONTool.class);
+        when(minifyJSONTool.getMinified()).thenReturn("{\"menu\":{\"id\":\"file\",\"value\":\"File\",\"popup\":{\"menuitem\":[{\"value\":\"New\",\"onclick\":\"CreateNewDoc()\"},{\"value\":\"Open\",\"onclick\":\"OpenDoc()\"},{\"value\":\"Close\",\"onclick\":\"CloseDoc()\"}]}}}");
+
+        assertEquals("{\"menu\":{\"id\":\"file\",\"value\":\"File\",\"popup\":{\"menuitem\":[{\"value\":\"New\",\"onclick\":\"CreateNewDoc()\"},{\"value\":\"Open\",\"onclick\":\"OpenDoc()\"},{\"value\":\"Close\",\"onclick\":\"CloseDoc()\"}]}}}", minifyJSONTool.getMinified());
+    }
 }
